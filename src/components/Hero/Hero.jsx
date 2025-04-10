@@ -1,34 +1,35 @@
 import React from "react";
-import Image1 from "../../assets/hero/women.png";
-import Image2 from "../../assets/hero/shopping.png";
-import Image3 from "../../assets/hero/sale.png";
+import Image1 from "../../assets/hero/hero1.jpg";
+import Image2 from "../../assets/hero/hero2.jpg";
+import Image3 from "../../assets/hero/hero3.jpg";
 import Slider from "react-slick";
+import "../style.css"
 
 const ImageList = [
   {
     id: 1,
-    img: Image1,
-    title: "Upto 50% off on all Men's Wear",
+    title: "Biznes va Startaplar – Bir Platformada!",
+    img:Image1,
     description:
-      "lorem His Life will forever be Changed dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Investorlarni toping, loyihangizni rivojlantiring, yangi hamkorlar bilan bog‘laning – hammasi bitta joyda!",
   },
   {
     id: 2,
-    img: Image2,
-    title: "30% off on all Women's Wear",
+    title: "Biznesingiz uchun to‘g‘ri hamkorlarni toping!",
+    img:Image2,
     description:
-      "Who's there lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Loyihachilar, investorlar va tadbirkorlar uchun maxsus ijtimoiy tarmoq. Yangi imkoniyatlar va birgalikda muvaffaqiyat qozonish platformasi.",
   },
   {
     id: 3,
-    img: Image3,
-    title: "70% off on all Products Sale",
+    title: "Ijobiy o‘zgarishni birga boshlaymiz!",
+    img:Image3,
     description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Innovatsion g‘oyalaringizni amalga oshiring, moliyaviy qo‘llab-quvvatlovchilar toping va o‘z sohangizda yetakchi bo‘ling!",
   },
 ];
 
-const Hero = ({ handleOrderPopup }) => {
+const Hero = () => {
   var settings = {
     dots: false,
     arrows: false,
@@ -76,7 +77,6 @@ const Hero = ({ handleOrderPopup }) => {
                     data-aos-delay="300"
                   >
                     <button
-                      onClick={handleOrderPopup}
                       className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full"
                     >
                       Order Now
@@ -92,8 +92,8 @@ const Hero = ({ handleOrderPopup }) => {
                   >
                     <img
                       src={data.img}
-                      alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto"
+                      alt="Error img"
+                      className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto heroImage"
                     />
                   </div>
                 </div>
